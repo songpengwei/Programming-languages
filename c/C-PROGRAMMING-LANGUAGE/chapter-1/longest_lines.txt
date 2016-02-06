@@ -1,0 +1,8 @@
+Since things divide so nicely, it would be well to write them that way too.
+Accordingly, let us first write a separate function getline to fetch the next line
+of input. We will try to make the function useful in other contexts, 
+At the minimum, getline has to return a signal about possible end of file; a more
+useful design would be to return the length of the line, or zero if end of file is
+encountered, Zero is an acceptable end-of-file return because it is never a valid 
+line length, Every text line has at least one character; even a line containing 
+only a newline has length 1.

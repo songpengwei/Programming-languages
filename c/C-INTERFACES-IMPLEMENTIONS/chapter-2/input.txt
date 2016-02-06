@@ -1,0 +1,10 @@
+Now consider the effect of performing an arithmetic right shift on a two’scomplement
+number. For a positive number, we have 0 as the most significant bit,
+and so the effect is the same as for a logical right shift. Thus, an arithmetic right
+shift by k is the same as division by 2k for a nonnegative number.As an example of
+a negative number, Figure 2.28 shows the effect of applying arithmetic right shift
+to a 16-bit representation of−12,340 for different shift amounts.Aswe can see, the
+result is almost the same as dividing by a power of 2. For the case when no rounding
+is required (k = 1), the result is correct. But when rounding is required, shifting
+causes the result to be rounded downward rather than toward zero, as should be
+the convention. For example, the expression -7/2 should yield -3 rather than -4.
